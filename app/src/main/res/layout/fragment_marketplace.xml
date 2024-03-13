@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:backgroundTint="@android:color/transparent">
+
+
+    <!-- activity_marketplace.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Seller View -->
+        <LinearLayout
+            android:id="@+id/layoutSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/etNumberOfEggs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:hint="Number of Eggs to Sell" />
+
+            <Button
+                android:id="@+id/btnUploadEggs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#006400"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+                android:text="Upload Eggs"
+                />
+        </LinearLayout>
+
+        <!-- Buyer View -->
+        <LinearLayout
+            android:id="@+id/layoutBuyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etNumberOfEggsToBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Eggs to Buy" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Phone Number" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name" />
+
+            <Button
+                android:id="@+id/btnBuyEggs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy Eggs" />
+        </LinearLayout>
+
+        <!-- Button to switch between Seller and Buyer views -->
+        <Button
+            android:id="@+id/btnSwitchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#006400"
+            android:padding="10dp"
+            android:text="Switch to Buyer View"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</RelativeLayout>

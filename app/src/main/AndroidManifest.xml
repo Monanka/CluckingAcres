@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:allowBackup="true"
+        android:label="CLUCKING ACRES"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CluckingAcres"
+        tools:targetApi="31"
+        android:enableOnBackInvokedCallback="true">
+
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".VaccinationsFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+        />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".EggsReportFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".HelpFragment"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".DiseasesFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".FeedsFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ProfileFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ReportsFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MarketplaceActivity"
+            android:exported="true">
+        </activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:text="EggsReport"
+    android:textSize="50sp"
+    android:textStyle="bold"
+    android:textColor="#006400" />
+
+    <EditText
+        android:id="@+id/editTextEggCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Daily egg count"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#006400"/>
+
+</LinearLayout>

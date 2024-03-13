@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CluckingAcres</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="clucking_acres">Clucking Acres</string>
+    <string name="analytics_icon">Analytics Icon</string>
+    <string name="eggs_report">Eggs Report</string>
+    <string name="feeds_icon">Feeds Icon</string>
+    <string name="feeds">Feeds</string>
+    <string name="vaccinations_icon">Vaccinations Icon</string>
+    <string name="vaccinations">Vaccinations</string>
+    <string name="diseases_icon">Diseases Icon</string>
+    <string name="diseases">Diseases</string>
+    <string name="analytics">Analytics</string>
+    <string name="reports_icon">Reports Icon</string>
+    <string name="reports">Reports</string>
+    <string name="analytics_icon2">Analytics Icon</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="password2">Password</string>
+    <string name="login">Login</string>
+</resources>

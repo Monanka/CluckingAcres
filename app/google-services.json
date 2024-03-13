@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972938323058",
+    "project_id": "cluckingacres-71c5c",
+    "storage_bucket": "cluckingacres-71c5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972938323058:android:315d00247b90ec4fbf0eeb",
+        "android_client_info": {
+          "package_name": "com.example.cluckingacres"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWsV3ax3RrQEnQyzm5KZg7qIOsUEaausE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
