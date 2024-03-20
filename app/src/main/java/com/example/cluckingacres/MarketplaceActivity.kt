@@ -13,6 +13,7 @@ import retrofit2.Response
 
 class MarketplaceActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_marketplace)
@@ -51,7 +52,7 @@ class MarketplaceActivity : AppCompatActivity() {
         }
 
         // Buyer functionality
-        val btnBuyEggs: Button = findViewById(R.id.btnBuyEggs)
+        val btnBuyEggs: Button = findViewById(R.id.button)
         btnBuyEggs.setOnClickListener {
             // Handle the buy eggs logic here
             // Get the number of eggs to buy from etNumberOfEggsToBuy

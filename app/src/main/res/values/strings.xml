@@ -31,4 +31,24 @@
     <string name="forgot_password">Forgot Password ?</string>
     <string name="password2">Password</string>
     <string name="login">Login</string>
+    <string-array name="feed_types">
+        <item>Corn</item>
+        <item>Soybean Meal</item>
+        <item>Wheat</item>
+        <item>Oats</item>
+        <item>Barley</item>
+        <!-- Add more feed types as needed -->
+    </string-array>
+
+        <string-array name="vaccination_types">
+            <item>MDV</item>
+            <item>NDV</item>
+            <item> IBV</item>
+            <item> IBDV</item>
+            <item> NDV</item>
+            <item> HEV.</item>
+            <!-- Add more vaccination types as needed -->
+        </string-array>
+
+
 </resources>

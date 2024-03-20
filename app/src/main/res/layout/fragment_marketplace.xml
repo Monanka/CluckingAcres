@@ -57,25 +57,37 @@
                 android:id="@+id/etNumberOfEggsToBuy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
                 android:hint="Number of Eggs to Buy" />
 
             <EditText
                 android:id="@+id/etPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:hint="Your Phone Number" />
 
             <EditText
                 android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:hint="Your Name" />
 
             <Button
-                android:id="@+id/btnBuyEggs"
-                android:layout_width="match_parent"
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buy Eggs" />
+                android:layout_marginTop="48dp"
+                android:text="Pay"
+                android:backgroundTint="#006400"
+                android:textColor="#ffffff" />
         </LinearLayout>
 
         <!-- Button to switch between Seller and Buyer views -->

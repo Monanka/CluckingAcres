@@ -33,7 +33,7 @@
 
         </activity>
         <activity
-            android:name=".VaccinationsFragment"
+            android:name=".VaccinationsFragment1"
             android:exported="true">
         </activity>
         <activity
@@ -42,6 +42,10 @@
         />
         <activity
             android:name=".NotificationActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".NotificationFragment1"
             android:exported="true">
 
         </activity>
@@ -52,32 +56,30 @@
 
         </activity>
         <activity
-            android:name=".EggsReportFragment"
+            android:name=".EggsReportFragment1"
             android:exported="true">
         </activity>
+
+
         <activity
-            android:name=".HelpFragment"
+            android:name=".HelpFragment1"
             android:exported="true">
         </activity>
 
         <activity
-            android:name=".DiseasesFragment"
+            android:name=".FeedsFragment1"
             android:exported="true">
         </activity>
         <activity
-            android:name=".FeedsFragment"
+            android:name=".ProfileFragment1"
             android:exported="true">
         </activity>
         <activity
-            android:name=".ProfileFragment"
+            android:name=".ReportsFragment1"
             android:exported="true">
         </activity>
         <activity
-            android:name=".ReportsFragment"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".MarketplaceActivity"
+            android:name=".MarketplaceFragment1"
             android:exported="true">
         </activity>
 

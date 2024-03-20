@@ -1,4 +1,4 @@
-import okhttp3.Credentials
+
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -13,7 +13,7 @@ object RetrofitClient {
     val instance: DarajaService by lazy {
         val okHttpClient = OkHttpClient.Builder()
             .addInterceptor { chain ->
-                val credential = Credentials.basic(CONSUMER_KEY, CONSUMER_SECRET)
+                val credential = okhttp3.Credentials.basic(CONSUMER_KEY, CONSUMER_SECRET)
                 val request = chain.request()
                     .newBuilder()
                     .header("Authorization", credential)

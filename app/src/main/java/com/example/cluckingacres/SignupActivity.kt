@@ -10,6 +10,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+
 
 class SignupActivity : AppCompatActivity() {
     private lateinit var emailInput: EditText
@@ -24,11 +26,15 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var confirmPasswordInputLayout: TextInputLayout
     private lateinit var signUpButton: Button
     private lateinit var auth: FirebaseAuth
+    private lateinit var db: FirebaseFirestore
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_signup)
+
         auth = FirebaseAuth.getInstance()
+        db = FirebaseFirestore.getInstance()
         emailInput = findViewById(R.id.email)
         userNameInput = findViewById(R.id.username)
         phoneNumberInput = findViewById(R.id.phone)
@@ -62,7 +68,7 @@ class SignupActivity : AppCompatActivity() {
             }
 
             if (phoneNumber.isEmpty()) {
-                phoneNumberInputLayout.error = "Last name is required"
+                phoneNumberInputLayout.error = "phone number is required"
             } else {
                 phoneNumberInputLayout.error = null
             }
@@ -88,16 +94,29 @@ class SignupActivity : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            val user = auth.currentUser
-                            val email = emailInput.text.toString()
-                            val password = passwordInput.text.toString()
+                            val firebaseUser = auth.currentUser
+                            val uid = firebaseUser?.uid ?: ""
+                            val user = hashMapOf(
+                                "uid" to uid,
+                                "email" to email,
+                                "userName" to userName,
+                                "phoneNumber" to phoneNumber
+                            )
+
+                            db.collection("users")
+                                .document(uid) // Use the UID as document ID
+                                .set(user)
+                                .addOnSuccessListener { documentReference ->
+                                    Log.d(TAG, "DocumentSnapshot added with ID: $uid")
+                                }
+                                .addOnFailureListener { e ->
+                                    Log.w(TAG, "Error adding document", e)
+                                }
+
                             // Sign in success, update UI with the signed-in user's information
-//                        Log.d(TAG, "createUserWithEmail:success")
-//                        val user = auth.currentUser
                             val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
                             finish()
-
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -106,9 +125,9 @@ class SignupActivity : AppCompatActivity() {
                                 baseContext, "Authentication failed.",
                                 Toast.LENGTH_SHORT
                             ).show()
-
                         }
                     }
+
             } else {
                 Toast.makeText(
                     this,
@@ -124,7 +143,6 @@ class SignupActivity : AppCompatActivity() {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
-
 
         }
     }

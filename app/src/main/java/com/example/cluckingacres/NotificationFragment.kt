@@ -1,10 +1,11 @@
 package com.example.cluckingacres
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 
 
 class NotificationsFragment : Fragment() {
@@ -18,6 +19,11 @@ class NotificationsFragment : Fragment() {
         return view
     }
 
+}
+class NotificationFragment1 : AppCompatActivity() {
 
-
+    public override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.fragment_notification)
+    }
 }

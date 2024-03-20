@@ -14,5 +14,112 @@
         android:textSize="50sp"
         android:textStyle="bold"
         android:textColor="#006400" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="General Poultry Information"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/webmd_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Engokho: https://www.kuku.co.ke/post/expert-tips-for-starting-and-managing-a-successful-poultry-farm-in-kenya"
+            android:textSize="16sp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:tag="https://www.kuku.co.ke/post/expert-tips-for-starting-and-managing-a-successful-poultry-farm-in-kenya" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Vaccinations"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poultrysite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ThePoultrySite : https://www.thepoultrysite.com/articles/vaccine-administration-to-poultry-flocks"
+            android:textSize="16sp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:tag="https://www.thepoultrysite.com/articles/vaccine-administration-to-poultry-flocks" />
+
+        <TextView
+            android:id="@+id/poultryhub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PoutlryHub: https://www.poultryhub.org/all-about-poultry/health-management/vaccination"
+            android:textSize="16sp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:tag="https://www.poultryhub.org/all-about-poultry/health-management/vaccination" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Different Diseases"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Msdvetmanual: https://www.msdvetmanual.com/exotic-and-laboratory-animals/backyard-poultry/common-infectious-diseases-in-backyard-poultry/"
+            android:textSize="16sp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:tag="https://www.msdvetmanual.com/exotic-and-laboratory-animals/backyard-poultry/common-infectious-diseases-in-backyard-poultry"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Vetenerians"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Vet : https://www.kenyavetassociation.com/info-hub/locate-a-vet/"
+            android:textSize="16sp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:tag="https://www.kenyavetassociation.com/info-hub/locate-a-vet/" />
+
+    </LinearLayout>
+
+
 
 </RelativeLayout>

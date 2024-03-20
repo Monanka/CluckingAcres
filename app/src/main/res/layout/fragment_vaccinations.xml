@@ -7,12 +7,59 @@
     tools:context=".HomeFragment"
     android:backgroundTint="@android:color/transparent">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Vaccination"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:textColor="#006400" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewVaccinationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccination Type"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textColor="#006400"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinnerVaccinationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#006400"
+            android:entries="@array/vaccination_types" />
+
+        <TextView
+            android:id="@+id/textViewVaccinationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Vaccination"
+            android:layout_marginTop="100dp"
+            android:textSize="30sp"
+            android:textColor="#006400"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextVaccinationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter date (e.g., YYYY-MM-DD)"
+            android:layout_marginTop="20dp"
+            android:textColor="#006400"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/buttonRecordVaccination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#006400"
+            android:text="Record Vaccination" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
