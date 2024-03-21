@@ -3,4 +3,4 @@
     <item name="fragmentContainer" type="id"/>
     <item name="feedTypeTextView" type="id" />
     <item name="feedQuantityTextView" type="id" />
-</resources>
+    </resources>

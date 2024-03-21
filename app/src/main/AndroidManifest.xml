@@ -71,11 +71,11 @@
             android:exported="true">
         </activity>
         <activity
-            android:name=".ProfileFragment1"
+            android:name=".ProfileActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".ReportsFragment1"
+            android:name=".ReportsActivity"
             android:exported="true">
         </activity>
         <activity

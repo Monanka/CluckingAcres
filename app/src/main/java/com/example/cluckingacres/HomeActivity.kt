@@ -28,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
 
                 R.id.nav_profile -> {
                     //loadFragment(ProfileFragment())
-                    val intent = Intent(this, ProfileFragment1::class.java)
+                    val intent = Intent(this, ProfileActivity::class.java)
                     startActivity(intent)
                     return@OnNavigationItemSelectedListener true
                 }
@@ -105,7 +105,7 @@ class HomeActivity : AppCompatActivity() {
         reportsContainer.setOnClickListener {
             //val ReportsFragment = ReportsFragment()
             //replaceFragment(ReportsFragment)
-            val intent = Intent(this, ReportsFragment1::class.java)
+            val intent = Intent(this, ReportsActivity::class.java)
             startActivity(intent)
         }
 
