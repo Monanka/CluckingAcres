@@ -7,8 +7,8 @@ object RetrofitClient {
     private const val BASE_URL = "https://api.safaricom.com/"
 
     // Replace these placeholders with your actual consumer key and consumer secret
-    private const val CONSUMER_KEY = "o20VNwp1e9AIZ5LOYGBYcOEOQlnxEAAvkSP0d7zOTVSfJufh"
-    private const val CONSUMER_SECRET = "5AmowqXp8AcPxc6zMuydIvDddrV6OVvAFChDhuyqbmAWHUIZ0QDR8aAPa8X9Uk9v"
+    private const val CONSUMER_KEY = ""
+    private const val CONSUMER_SECRET = ""
 
     val instance: DarajaService by lazy {
         val okHttpClient = OkHttpClient.Builder()
